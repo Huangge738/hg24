@@ -1,5 +1,11 @@
 from django import HttpResponse
+from django import redirect
+
 
 def index(request):
-    return
+    return HttpResponse('index')
+
+def login(request):
+    rediect('/index')
+
 
